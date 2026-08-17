@@ -57,8 +57,49 @@ body{
     transform: scale(1);
 }
 
-.song-title:{
+
+
+.audio-player{
+    width:350px;
+    margin-top: 15px;
+    padding: 6px;
+    border: 5px solid brown;
+   border-radius: 40px;
+ 
+}
+.art-display{
+    position:relative;
+    width: 250px;
+    height: 300px;
+    margin: auto;
+    background-color: rgb(33, 77, 115);
+    border:15px solid #333c68;
+    border-radius:20px;
+    overflow-y:hidden;
 
 }
+.art-image{
+    width: 25%;
+    height:25%;
+    object-fit:content;
+    height: 300px;
+    margin: auto;
+    background-color: rgb(33, 77, 115);
+    border:15px solid #333c68;
+    border-radius:20px;
+    overflow-y:hidden;
+}
 
-
+.previous-button,
+.next-button {
+    position: absolute;
+    bottom: 20px;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
