@@ -4,18 +4,30 @@
     padding: 0;
 
 }
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
 body{
     font-family: Arial, sans-serif;
     color: #1d1d1d;
     line-height: 1;
-   
-    background-image: url("images/background\ 3.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-
+    background-color: #f6f5df;
+    color: #3b211b;
+    min-height: 100vh;
     
+}
+
+.header{
+    width: 90%;
+    max-width: 1200px;
+    margin-left:30px;
+    position: relative;
+    padding-top: 20px;
+    text-align: center;
 }
 
 
@@ -32,8 +44,9 @@ font-size: 20px;
 text-decoration: none;
 transition: 0.3s ease;
 }
+
 .nav-links a:hover{
-    background-color: aliceblue;
+    background-color: rgb(255, 251, 240);
     border-radius: 25px;
     padding:5px;
 }
@@ -57,13 +70,79 @@ header h1 {
     font-family: "story script", cursive;
     font-size: 35px;
 }
+.music-box{
+    border: 1px solid #edc869;
+    border-radius: 20px;
+    padding: 30px;
+    cursor: pointer;
+    min-height: 350px;
+    width: 600px;
+    position: relative;
+    overflow: hidden;
+    margin-left: 400px;
+
+
+}
+
+
+.music-box::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background-image: url("images/music.jpg");
+    background-size: cover;
+    background-position: center;
+   opacity: 0.45;
+    transform: scale(1.05);
+    z-index: 0;
+}
+
+
+.music-box summary{
+    text-align: center;
+    list-style: none;
+
+}
+.music-box summary::-webkit-details-marker{
+    display:none;
+
+}
+
+.music-short-description{
+    margin-top: 15px;
+    font-size: 20px;
+    position: relative;
+    z-index: 1;
+    font-family: cursive;
+}
+
+.music-content{
+    margin-top: 40px;
+    z-index: 1;
+    position: relative;
+
+}
 .music-list{
     list-style: none;
-    margin-top: 30px;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
+
+
+.section-title{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: 55px;
+    color: #3b211b;
+    padding-top: 20px;
+    margin-top:55px; ;
+
+}
+
 .song-item{
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     width: fit-content;
 
 }
@@ -101,8 +180,19 @@ header h1 {
     visibility: visible;
     transform: scale(1);
 }
+.mini-title{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    
+}
 
-
+.subsection-title{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+.favorite-song-description{
+    font-family: cursive;
+}
 
 .audio-player{
     width:350px;
@@ -118,4 +208,148 @@ header h1 {
     border-radius: 20px;
     border:3px brown;
 }
+
+
+
+
+
+
+
+.movies-section{
+    padding:80px;
+    background-color:brown;
+
+}
+
+
+.movies-header{
+    text-align:center;
+    max-width: 850px;
+    margin:0 auto 80px;
+}
+
+.movies-title{
+    font-size:60px;
+    margin:0 0 25px;
+    font-weight:600;
+    font-family: 'Times New Roman', Times, serif;
+    color: #3b211b;
+
+}
+
+
+.movies-introduction{
+    font-size: 18px;
+    color: #3b211b;
+    margin: 0;
+}
+.movie-suntitle{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+    text-align: left;
+}
+.why-i-love-movies{
+    .max-width: 550px;
+    margin: 0 auto 80px;
+    text-align: left;
+}
+
+.movie-collective{
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 20px;
+    width: 900px;
+    padding: 0 0 25px;
+}
+
+.movie-poster{
+    width: 150px;;
+    height:200px;
+    object-fit: cover;
+    border-radius: 15px;
+    display: block;
+}
+
+.movie-title{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    padding-top: 17px;
+
+}
+.movie-feeling{
+    font-family: cursive;
+    font-weight: 50;
+    font-size: 13px;
+
+
+}
+
+
+.movies-message {
+    max-width: 700px;
+    margin: 80px auto 0;
+    
+    background-color: rgb(245, 242, 197);
+    border: #3b211b;
+    border-radius: 15px;
+}
+
+.movies-message-text {
+    font-size: 17px;
+    font-weight: 300;
+    margin: 0 0 10px;
+    color: #666;
+    padding-top: 20px;
+    padding-left:25px;
+    
+}
+
+.movies-quote {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #666;
+    margin: 0;
+    padding-bottom: 20px;
+    padding-left: 25px;
+}
+
+.movie-box{
+  border: 1px solid brown;
+    border-radius: 20px;
+    padding: 30px 60px;
+    cursor: pointer;
+    min-height: 550px;
+   width: 1200px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    box-sizing: border-box;
+   
+}
+.movie-box::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background-image: url("images/movies.jpg");
+    background-size: cover;
+    background-position: center;
+   opacity: 0.45;
+    transform: scale(1.05);
+    z-index: 0;
+}
+
+
+.movie-box> *{
+position: relative;
+z-index: 1;
+}
+
+.movie-box . .movies-header{
+    text-align: center;
+
+}
+.movie-box.movie-favorite{
+    position:relative;
+    z
 }
