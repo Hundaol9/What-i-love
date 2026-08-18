@@ -8,9 +8,54 @@ body{
     font-family: Arial, sans-serif;
     color: #1d1d1d;
     line-height: 1;
-    background-color: #f4f4f4;
+   
+    background-image: url("images/background\ 3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
 
     
+}
+
+
+.nav-links{
+    display: flex;
+    align-items: center;
+   gap: 20px;
+
+}
+.nav-links a{
+color: rgb(15, 47, 59);
+font-family: 'Times New Roman', Times, serif;
+font-size: 20px;
+text-decoration: none;
+transition: 0.3s ease;
+}
+.nav-links a:hover{
+    background-color: aliceblue;
+    border-radius: 25px;
+    padding:5px;
+}
+
+
+header{
+    display: flex;
+    text-align: left;
+   padding: 40px 20px 20px;
+       justify-content: space-between;
+align-items: center;
+   
+}
+header h1 {
+    font-family:"story script", cursive;
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.about-title{
+    font-family: "story script", cursive;
+    font-size: 35px;
 }
 .music-list{
     list-style: none;
@@ -67,39 +112,10 @@ body{
    border-radius: 40px;
  
 }
-.art-display{
-    position:relative;
-    width: 250px;
+.art-preview{
+    width: 300px;
     height: 300px;
-    margin: auto;
-    background-color: rgb(33, 77, 115);
-    border:15px solid #333c68;
-    border-radius:20px;
-    overflow-y:hidden;
-
+    border-radius: 20px;
+    border:3px brown;
 }
-.art-image{
-    width: 25%;
-    height:25%;
-    object-fit:content;
-    height: 300px;
-    margin: auto;
-    background-color: rgb(33, 77, 115);
-    border:15px solid #333c68;
-    border-radius:20px;
-    overflow-y:hidden;
-}
-
-.previous-button,
-.next-button {
-    position: absolute;
-    bottom: 20px;
-    width: 45px;
-    height: 45px;
-    border: none;
-    border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.6);
-    color: white;
-    font-size: 20px;
-    cursor: pointer;
 }

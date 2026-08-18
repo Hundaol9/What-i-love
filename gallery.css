@@ -1,0 +1,49 @@
+.art-display{
+    position:relative;
+    width: 700px;
+    height: 700px;
+    margin-left: 80px;
+    background-color: rgb(33, 77, 115);
+    border: 3px solid #333c68;
+    border-radius:20px;
+    overflow-y:hidden;
+
+}
+.art-image{
+    
+    height: 600px;
+    width: 500px;
+    margin-left: 200px;
+    margin-top: 10px;
+    border: 7px solid #333c68;
+    border-radius:20px;
+  
+}
+
+.previous-button,
+.next-button {
+    position: absolute;
+    bottom: 20px;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+.previous-button {
+    left: 25px;
+}
+.next-button {
+    right: 590px;
+}
+.previous-button:hover,
+.next-button:hover {
+    background-color: rgba(99, 15, 15, 0.8);
+}
+
+.art-gallery{
+    display:flex;
+    overflow-x: auto;
