@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    font-family: Arial, sans-serif;
+    color: #1d1d1d;
+    line-height: 1;
+    background-color: #f6f5df;
+    color: #3b211b;
+    min-height: 100vh;
+    
+}
+
+.header{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0;
+    position: relative;
+    padding-top: 20px;
+    text-align: center;
+}
+
+
+.title{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 60px;
+    padding-top: 60px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+
+.nav-links{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+   gap: 20px;
+   justify-content: center;
+
+}
+.nav-links a{
+color: rgb(15, 47, 59);
+font-family: 'Times New Roman', Times, serif;
+font-size: 20px;
+text-decoration: none;
+transition: 0.3s ease;
+}
+.nav-links a:hover{
+    background-color: aliceblue;
+    border-radius: 25px;
+    padding:5px;
+}
+
+
+
+.herop1{
+    position: absolute;
+    left: 0%;
+    top: 35px;
+    text-align: left;
+    font-size: 15px;
+    font-family: cursive;
+   color: rgb(15, 47, 59);
+   
+
+}
+.hero-description{
+    width: 800px;
+    font-size: 20px;
+    font-family:"story script", cursive;
+    text-align:center;
+
+}
+.hero-section{
+    width: 90%;
+    max-width: 1100px;
+    margin: 1px auto 0px;
+    padding: 20px 40px;
+    text-align: center;
+    position: relative;
+}
+
+.card-container{
+    display: grid;
+    grid-template-columns: (5, minmax(180px,1fr));
+    gap: 5px;
+    align-items: stretch;
+
+}
+.favorite-section{
+    width: 92%;
+    max-width: 1250px;
+    margin
+}
