@@ -21,6 +21,8 @@ body{
     position: relative;
     padding-top: 20px;
     text-align: center;
+
+ 
 }
 
 
@@ -29,17 +31,26 @@ body{
     font-size: 60px;
     padding-top: 60px;
     margin-top: 30px;
-    margin-left: 60px;
+    margin-left: auto;
     text-align: center;
+    animation: titleAppear 3s ease;
 }
 
 
 .nav-links{
     display: flex;
     align-items: center;
+    position: absolute;
     margin-top: 15px;
    gap: 20px;
-   justify-content: center;
+    justify-content:flex-end;
+   margin-right:1px;
+   margin-top: 30px;
+   top: 0;
+right: 0;
+
+
+
 
 }
 .nav-links a{
@@ -127,10 +138,10 @@ transition: 0.3s ease;
 .hero-description{
     width: 800px;
     max-width: 90%;
-    font-size: 20px;
+    font-size: 18px;
     font-family:"story script", cursive;
     text-align:center;
-    margin-left:250px;
+    margin-left: auto;
 
 }
 .hero-section{
@@ -167,4 +178,37 @@ transition: 0.3s ease;
 .card-content p{
     font-family: cursive;
     font-size: 15px;
+}
+@media screen and (max-width: 800px) {
+
+ 
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+ 
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+}
+
+
+@keyframes titleAppear {
+    from{
+        opacity:0;
+          transform :translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
 }

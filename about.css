@@ -24,6 +24,11 @@ body{
     padding-top: 20px;
     text-align: center;
    
+
+
+     position: sticky;
+    top: 0;
+    z-index: 100;
    
 }
 
@@ -35,7 +40,7 @@ body{
 position: absolute;
    gap: 20px;
    justify-content:flex-end;
-   margin-right: 260px;
+   margin-right: 50px;
    margin-top: 30px;
    top: 0;
 right: 2px;
@@ -111,6 +116,7 @@ header h1 {
     inset: 0;
 
     background-image: url("images/music.jpg");
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
    opacity: 0.45;
@@ -225,8 +231,35 @@ header h1 {
 
 
 
+.table {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+.music-table {
+    width: 100%;
+    max-width: 700px;
+    border-collapse: collapse;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 10px;
+}
 
+.music-table th,
+.music-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #3b211b;
+}
 
+.music-table th {
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.music-table td {
+    font-size: 16px;
+}
 
 
 .movie-section{
@@ -371,6 +404,7 @@ header h1 {
 
     background-image: url("images/movies.jpg");
     background-size: cover;
+     background-repeat: no-repeat;
     background-position: center;
    opacity: 0.55;
     transform: scale(1.05);
@@ -437,6 +471,7 @@ z-index: 1;
 
     background-image: url("images/art.jpg");
     background-size: cover;
+     background-repeat: no-repeat;
     background-position: center;
    opacity: 0.55;
     transform: scale(1.05);
@@ -471,4 +506,41 @@ z-index: 1;
 .mini-title{
     font-family: 'Times New Roman', Times, serif;
    
+}
+
+@media screen and (max-width: 1024px) {
+    .music-box,
+    .movie-box,
+    .art-box {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media screen and (max-width: 600px) {
+
+    .music-box,
+    .movie-box,
+    .art-box {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+}
+
+
+@media screen and (max-width: 800px) {
+
+ 
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
 }

@@ -10,6 +10,11 @@ padding: 0;
     position: relative;
     padding-top: 20px;
     text-align: center;
+
+
+     position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 
@@ -235,3 +240,29 @@ margin: 20px;
         padding-top: 20px;
        padding-left: 80px;
     }
+
+    @media screen and (max-width: 1024px) {
+        .art-diplay,
+    .art-gallery{
+        width: 80%;
+        height:100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+ .art-diplay,
+    .art-gallery{
+        width: 100%;
+        margin-left: 5%;
+        margin-right:5%;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+}
