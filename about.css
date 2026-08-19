@@ -202,12 +202,6 @@ header h1 {
    border-radius: 40px;
  
 }
-.art-preview{
-    width: 300px;
-    height: 300px;
-    border-radius: 20px;
-    border:3px brown;
-}
 
 
 
@@ -391,4 +385,70 @@ z-index: 1;
     color: #1d1d1d;
     margin-top: 15px;
 
+}
+.art-box{
+  border: 1px solid rgb(233, 239, 132);
+    border-radius: 20px;
+    padding: 30px 60px;
+    cursor: pointer;
+    min-height: 350px;
+   width: 600px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 400px;
+    box-sizing: border-box;
+
+}
+
+
+   
+.art-preview{
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    border:3px brown;
+}
+.art-box::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background-image: url("images/art.jpg");
+    background-size: cover;
+    background-position: center;
+   opacity: 0.55;
+    transform: scale(1.05);
+    z-index: 0;
+}
+
+
+.art-box> *{
+position: relative;
+z-index: 1;
+}
+
+.art-title{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: 55px;
+   
+    padding-top: 20px;
+    margin-top: 55px;
+}
+.intro{
+    font-family: cursive;
+        font-size: 19px;
+
+}
+
+.section-description{
+    font-family: cursive;
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+.mini-title{
+    font-family: 'Times New Roman', Times, serif;
+   
 }
