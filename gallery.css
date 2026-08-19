@@ -14,20 +14,26 @@ padding: 0;
 
      position: sticky;
     top: 0;
-    z-index: 100;
+    z-index: 10;
 }
 
 
 .nav-links{
     display: flex;
     align-items: center;
+    position: fixed;
    gap: 20px;
 margin-right: 20px;
+ margin-top: 30px;
+   top: 0;
+right:20px;
 }
-
+ 
+  
 
 
 .nav-links a{
+     display: inline;
 color: rgb(15, 47, 59);
 font-family: 'Times New Roman', Times, serif;
 font-size: 20px;
@@ -78,7 +84,7 @@ body{
 
 .art-gallery{
    position: relative;
-   width: 1400px;
+   width: 90%;
    height:1600px;
 margin: 100px;
    border: 10px solid brown;
@@ -96,7 +102,7 @@ margin: 100px;
      border: 5px solid #24150c;
      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
      transition: transform 0.4s ease;
-     padding-left: 30px;
+    
 }
 
 .art-one{
@@ -256,8 +262,8 @@ margin: 20px;
  .art-diplay,
     .art-gallery{
         width: 100%;
-        margin-left: 5%;
-        margin-right:5%;
+        margin-left:auto;
+        margin-right:auto;
     }
 
     .nav-links {

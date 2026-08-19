@@ -40,19 +40,19 @@ header h1{
 .nav-links{
     display: flex;
     align-items:center;
-position: absolute;
+position: fixed;
    gap: 20px;
    justify-content:flex-end;
-   margin-right: 30px;
+  margin-right: 20px;
    margin-top: 30px;
    top: 0;
-right: 30px;
+right:20px;
 }
-
-
+ 
 
 
 .nav-links a{
+     display: inline;
 color: rgb(15, 47, 59);
 font-family: 'Times New Roman', Times, serif;
 font-size: 20px;
@@ -175,10 +175,18 @@ button{
     border-radius: 25px;
     margin-top: 7px;
 }
+    @media screen and (max-width: 1024px) {
+        .art-diplay,
+    .art-gallery{
+        width: 80%;
+        height:100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 
 @media screen and (max-width: 600px) {
-
- 
+    
     .nav-links {
         flex-direction: column;
         gap: 10px;

@@ -40,11 +40,10 @@ body{
 .nav-links{
     display: flex;
     align-items: center;
-    position: absolute;
-    margin-top: 15px;
+    position: fixed;
    gap: 20px;
     justify-content:flex-end;
-   margin-right:1px;
+   margin-right:20px;
    margin-top: 30px;
    top: 0;
 right: 0;
@@ -54,6 +53,7 @@ right: 0;
 
 }
 .nav-links a{
+    display: inline;
 color: rgb(15, 47, 59);
 font-family: 'Times New Roman', Times, serif;
 font-size: 20px;
@@ -80,7 +80,7 @@ transition: 0.3s ease;
 
 .card-container{
     display: grid;
-    gap: 4px;
+    
     grid-template-columns: repeat(5,1fr);
     position: relative;
     z-index: 2;
@@ -179,7 +179,7 @@ transition: 0.3s ease;
     font-family: cursive;
     font-size: 15px;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
 
  
     .nav-links {

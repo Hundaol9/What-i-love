@@ -50,6 +50,7 @@ right: 2px;
 
 
 .nav-links a{
+     display: inline;
 color: rgb(15, 47, 59);
 font-family: 'Times New Roman', Times, serif;
 font-size: 20px;
@@ -178,7 +179,7 @@ header h1 {
     font-size: 20px;
     font-family: "Story Script", sans-serif;
   font-weight: 400;
-  font-style: normal;
+
     font-weight: bold;
     cursor: pointer;
     padding: 8px 12px;
@@ -322,7 +323,7 @@ header h1 {
 }
 
 .movie-poster{
-    width: 150px;;
+    width: 150px;
     height:200px;
     object-fit: cover;
     border-radius: 15px;
@@ -354,7 +355,7 @@ header h1 {
     margin: 70px auto 0;
     padding: 15px;
     background-color:#57504e;
-    border: #3b211b;
+    border: 2px solid #3b211b;
     border-radius: 15px;
     text-align: center;
       color: #c5c5c5;
@@ -376,7 +377,7 @@ header h1 {
     font-size: 14px;
     line-height: 1.7;
    color: #c5c5c5;
-     font-weight: 300px
+     font-weight: 300;
     margin: 0;
     padding-bottom: 20px;
     padding-left: 25px;
@@ -462,7 +463,7 @@ z-index: 1;
     width: 300px;
     height: 300px;
     border-radius: 20px;
-    border:3px brown;
+   
 }
 .art-box::before{
     content: "";
@@ -516,6 +517,7 @@ z-index: 1;
         margin-left: auto;
         margin-right: auto;
     }
+    
 }
 @media screen and (max-width: 600px) {
 
@@ -535,12 +537,3 @@ z-index: 1;
 }
 
 
-@media screen and (max-width: 800px) {
-
- 
-    .nav-links {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-}
