@@ -1,0 +1,143 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    font-family: Arial, sans-serif;
+    color: #1d1d1d;
+    line-height: 1;
+    background-color: #f6f5df;
+    color: #3b211b;
+    min-height: 100vh;
+    
+}
+
+header{
+    width: 90%;
+    max-width: 1200px;
+    margin-left:30px;
+    position: relative;
+    padding-top: 20px;
+    text-align: center;
+}
+
+
+header h1{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 50px;
+    padding-top: 60px;
+    margin-top: 20px;
+    margin-left: 60px;
+    text-align: center;
+}
+
+
+
+.nav-links{
+    display: flex;
+    align-items:center;
+position: absolute;
+   gap: 20px;
+   justify-content:flex-end;
+   margin-right: 30px;
+   margin-top: 30px;
+   top: 0;
+right: 30px;
+}
+
+
+
+
+.nav-links a{
+color: rgb(15, 47, 59);
+font-family: 'Times New Roman', Times, serif;
+font-size: 20px;
+text-decoration: none;
+transition: 0.3s ease;
+}
+
+.nav-links a:hover{
+    background-color: aliceblue;
+    border-radius: 2px;
+    padding:5px;
+}
+
+
+.herop1{
+
+    left: 0%;
+    top: 35px;
+    text-align: left;
+    font-size: 15px;
+    font-family: cursive;
+   color: rgb(15, 47, 59);
+   padding-top: 20px;
+}
+
+
+.contact-container{
+    width:60%;
+    max-width:600px;
+    height: 400px;
+    margin: 60px auto;
+    padding: 40px;
+    border: 1px solid #3b211b;
+    border-radius: 15px;
+}
+
+main h2{
+    font-family: 'Times New Roman', Times, serif;
+    padding-bottom: 20px;
+}
+
+main p{
+    font-family: cursive;
+}
+
+#name{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 15px;
+    margin-bottom: 10px;
+     border: 1px solid #3b211b;
+    border-radius: 10px;
+    background-color: transparent;
+    padding: 7px;
+}
+
+#email{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 15px;
+     margin-bottom: 10px;
+      border: 1px solid #3b211b;
+    border-radius: 10px;
+    background-color: transparent;
+    padding: 7px;
+}
+#message{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 15px;
+     margin-bottom: 10px;
+     
+
+}
+
+.input,
+textarea{
+      width: 100%;
+    padding: 12px;
+    border: 1px solid #3b211b;
+    border-radius: 8px;
+    background-color: transparent;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+button{
+    border:#1d1d1d;
+    background-color: #1d1d1d;
+    padding:7px 10px 7px;
+    color: #f6f5df;
+    border-radius: 25px;
+    margin-top: 7px;
+}
