@@ -95,7 +95,7 @@ header h1 {
    padding-top: 30px;
 }
 
-
+/*so this part is the whold whole music section*/
 .music-box{
     border: 1px solid #edc869;
     border-radius: 20px;
@@ -125,7 +125,7 @@ header h1 {
     z-index: 0;
 }
 
-
+/*here is the first visible part of the box*/
 .music-box summary{
     text-align: center;
     list-style: none;
@@ -186,6 +186,8 @@ header h1 {
     border-radius: 5px;
     transition: color 0.3s ease, transform 0.3s ease;
 }
+
+/*this part is where when you hover on the title you see a poster and an external link*/
 .song-poster{
     position: absolute;
     left: 120px;
@@ -262,7 +264,7 @@ header h1 {
     font-size: 16px;
 }
 
-
+/*this part is where the whole movie section sets*/
 .movie-section{
     padding:80px;
 
@@ -359,7 +361,7 @@ header h1 {
     border-radius: 15px;
     text-align: center;
       color: #c5c5c5;
-     ;
+     
 }
 
 .movies-message-text {
@@ -405,7 +407,7 @@ header h1 {
 
     background-image: url("images/movies.jpg");
     background-size: cover;
-     background-repeat: no-repeat;
+ background-repeat: no-repeat;
     background-position: center;
    opacity: 0.55;
     transform: scale(1.05);
@@ -441,6 +443,7 @@ z-index: 1;
     margin-top: 15px;
 
 }
+/*so this part is the whold whole art section*/
 .art-box{
   border: 1px solid rgb(233, 239, 132);
     border-radius: 20px;
