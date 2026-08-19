@@ -1,9 +1,4 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 
-}
 
 *{
     box-sizing: border-box;
@@ -28,15 +23,27 @@ body{
     position: relative;
     padding-top: 20px;
     text-align: center;
+   
+   
 }
+
 
 
 .nav-links{
     display: flex;
-    align-items: center;
+    align-items:center;
+position: absolute;
    gap: 20px;
-
+   justify-content:flex-end;
+   margin-right: 30px;
+   margin-top: 30px;
+   top: 0;
+right: 30px;
 }
+
+
+
+
 .nav-links a{
 color: rgb(15, 47, 59);
 font-family: 'Times New Roman', Times, serif;
@@ -46,30 +53,43 @@ transition: 0.3s ease;
 }
 
 .nav-links a:hover{
-    background-color: rgb(255, 251, 240);
-    border-radius: 25px;
+    background-color: aliceblue;
+    border-radius: 2px;
     padding:5px;
 }
 
 
-header{
-    display: flex;
-    text-align: left;
-   padding: 40px 20px 20px;
-       justify-content: space-between;
-align-items: center;
-   
-}
+
 header h1 {
-    font-family:"story script", cursive;
-    font-size: 55px;
-    margin-bottom: 20px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 60px;
+    padding-top: 60px;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 .about-title{
     font-family: "story script", cursive;
-    font-size: 35px;
+    font-size: 30px;
+    padding-bottom: 10px;
 }
+
+.about-description{
+    font-family: cursive;
+    font-size: 20px;
+}
+.herop1{
+
+    left: 0%;
+    top: 35px;
+    text-align: left;
+    font-size: 15px;
+    font-family: cursive;
+   color: rgb(15, 47, 59);
+   padding-top: 30px;
+}
+
+
 .music-box{
     border: 1px solid #edc869;
     border-radius: 20px;
